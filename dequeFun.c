@@ -30,10 +30,10 @@ int isDequeEmpty(struct Node **head_ref)
     if(isInitialized == 0) return 1;
     if(*head_ref == NULL)           //checking if there is no node
     {
-        printf("empty deque\n");
+        // printf("empty deque\n");
         return 2;
     }
-    printf("not empty deque\n");
+    // printf("not empty deque\n");
     return 0;
 }
 
@@ -138,7 +138,7 @@ int removeDeque(struct Node **head_ref) //deletes everything (starting at beggin
     } 
     *head_ref = NULL;               //if there's everything already deleted we point head to NULL
     isInitialized = 0;
-    printf("Deque is destroyed \n");
+    // printf("Deque is destroyed \n");
     return 0;
         } 
 
